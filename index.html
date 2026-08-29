@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chris Beerman — Addiction Therapist, Chicago</title>
+<meta name="description" content="Chris Beerman, MSW, LCSW, CADC — addiction therapist in Logan Square, Chicago. Private practice at Chicago Addiction Therapy.">
+<link rel="canonical" href="https://chrisbeerman.com/">
+
+<!-- Open Graph / link previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://chrisbeerman.com/">
+<meta property="og:title" content="Chris Beerman — Addiction Therapist, Chicago">
+<meta property="og:description" content="MSW, LCSW, CADC. Private practice in Logan Square, Chicago.">
+<meta property="og:image" content="https://chrisbeerman.com/portrait.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: a simple lake-blue dot. Swap for your own file later if you like. -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='%233E7CA6'/></svg>">
+
+<style>
+  :root{
+    --bg:#FBFAF8;
+    --surface:#FFFFFF;
+    --ink:#1B2227;
+    --ink-soft:#4A555E;
+    --ink-faint:#7C8890;
+    --rule:#E5E2DC;
+    --accent:#2F6F97;
+    --shadow:0 18px 40px -22px rgba(20,35,45,.45);
+    --radius:14px;
+    --measure:36rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12171B;
+      --surface:#181E23;
+      --ink:#EDF1F3;
+      --ink-soft:#AEBAC2;
+      --ink-faint:#7E8B94;
+      --rule:#283138;
+      --accent:#7FB6D8;
+      --shadow:0 18px 40px -22px rgba(0,0,0,.75);
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+
+  .page{
+    max-width:46rem;
+    margin:0 auto;
+    padding:clamp(2.5rem,7vw,4.5rem) 1.5rem clamp(3rem,7vw,5rem);
+  }
+
+  /* ---------- Hero: portrait + name ---------- */
+  .hero{
+    display:grid;
+    grid-template-columns:minmax(0,270px) minmax(0,1fr);
+    gap:clamp(1.5rem,4vw,3rem);
+    align-items:center;
+    margin-bottom:clamp(2rem,5vw,3rem);
+  }
+  .portrait{
+    border-radius:18px;
+    overflow:hidden;
+    background:var(--surface);
+    box-shadow:var(--shadow);
+  }
+  .portrait img{width:100%;height:auto;aspect-ratio:5/6;object-fit:cover}
+
+  h1{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+    font-size:clamp(2.1rem,6.5vw,3.1rem);
+    line-height:1.08;
+    letter-spacing:-.015em;
+    font-weight:600;
+    margin:0 0 .55rem;
+  }
+  .creds{
+    margin:0 0 1rem;
+    color:var(--ink-faint);
+    font-size:.85rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+  }
+  .tagline{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:1.05rem;
+  }
+
+  @media (max-width:640px){
+    .hero{grid-template-columns:1fr;gap:1.75rem}
+    .portrait{max-width:260px}
+  }
+
+  /* ---------- Body copy ---------- */
+  p{margin:0 0 1.15rem}
+  .body{max-width:var(--measure)}
+  .body p{color:var(--ink-soft)}
+  .body p strong{color:var(--ink);font-weight:600}
+
+  section{margin-top:2.75rem;max-width:var(--measure)}
+  h2{
+    font-size:.78rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    font-weight:600;
+    margin:0 0 1rem;
+    padding-bottom:.6rem;
+    border-bottom:1px solid var(--rule);
+  }
+
+  ul.focus{list-style:none;margin:0;padding:0}
+  ul.focus li{
+    color:var(--ink-soft);
+    padding:.45rem 0 .45rem 1.35rem;
+    position:relative;
+  }
+  ul.focus li::before{
+    content:"";
+    position:absolute;left:0;top:1.02em;
+    width:6px;height:6px;border-radius:50%;
+    background:var(--accent);
+  }
+
+  /* ---------- Links ---------- */
+  .links{display:grid;gap:.6rem}
+  a.card{
+    display:flex;align-items:center;gap:.75rem;
+    text-decoration:none;color:inherit;
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:var(--radius);
+    padding:.95rem 1.15rem;
+    transition:border-color .15s ease, transform .15s ease;
+  }
+  a.card:hover{border-color:var(--accent);transform:translateY(-1px)}
+  a.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  a.card .label{font-weight:600}
+  a.card .note{color:var(--ink-faint);font-size:.87rem}
+  a.card .arrow{margin-left:auto;color:var(--ink-faint)}
+
+  /* ---------- Footer ---------- */
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-faint);
+    font-size:.85rem;
+    max-width:var(--measure);
+  }
+  footer a{color:var(--ink-faint)}
+</style>
+</head>
+<body>
+<main class="page">
+
+  <!-- ===== Hero ===== -->
+  <header class="hero">
+    <!-- To change the photo: upload a new file to the repo and update the src below. -->
+    <div class="portrait">
+      <img src="portrait.jpg" alt="Chris Beerman" width="900" height="1080">
+    </div>
+    <div>
+      <h1>Chris Beerman</h1>
+      <p class="creds">MSW · LCSW · CADC</p>
+      <p class="tagline">Addiction therapist in Chicago. Gambling, sports betting, high-risk trading, alcohol and substance use.</p>
+    </div>
+  </header>
+
+  <!-- ===== Bio ===== -->
+  <div class="body">
+    <p>I run a private practice, <strong>Chicago Addiction Therapy</strong>, working with people whose gambling, drinking, or substance use has stopped being something they can talk themselves out of.</p>
+
+    <p>Most of the people I see aren't at rock bottom. They're functioning — holding down work, showing up for their families — and quietly aware that something has gotten away from them. That's a good time to start, not a reason to wait.</p>
+
+    <p>I see clients in person in Logan Square and online across Illinois and Minnesota. I also work with partners and family members, who often carry more of this than anyone acknowledges.</p>
+  </div>
+
+  <!-- ===== Focus areas ===== -->
+  <section>
+    <h2>What I work with</h2>
+    <ul class="focus">
+      <li>Gambling and sports betting</li>
+      <li>High-risk trading and speculation</li>
+      <li>Alcohol and substance use</li>
+      <li>Partners and families affected by someone else's use</li>
+    </ul>
+  </section>
+
+  <!-- ===== Links ===== -->
+  <section>
+    <h2>Elsewhere</h2>
+    <div class="links">
+      <a class="card" href="https://chicagoaddictiontherapy.com">
+        <span>
+          <span class="label">Chicago Addiction Therapy</span><br>
+          <span class="note">My practice — services, self-assessments, and writing</span>
+        </span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <a class="card" href="mailto:Chris@chicagoaddictiontherapy.com">
+        <span>
+          <span class="label">Email</span><br>
+          <span class="note">Chris@chicagoaddictiontherapy.com</span>
+        </span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <!-- To add another link, copy one of the blocks above and change the text and URL. -->
+    </div>
+  </section>
+
+  <footer>
+    <p>Logan Square, Chicago · Licensed in Illinois and Minnesota</p>
+    <p>This site is personal. For clinical services, scheduling, and fees, see <a href="https://chicagoaddictiontherapy.com">chicagoaddictiontherapy.com</a>. Nothing here is therapy or medical advice.</p>
+  </footer>
+
+</main>
+</body>
+</html>
