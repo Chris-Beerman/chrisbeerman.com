@@ -163,6 +163,16 @@
     max-width:var(--measure);
   }
   footer a{color:var(--ink-faint)}
+  /* Membership badge: white box keeps the blue-on-transparent artwork legible in dark mode */
+  a.badge{
+    display:inline-block;
+    margin:14px 0;
+    padding:6px 10px;
+    background:#fff;
+    border-radius:6px;
+  }
+  a.badge img{height:52px;width:auto;max-width:100%}
+  a.badge:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -250,6 +260,7 @@
   <footer>
     <p>Logan Square, Chicago · Licensed in Illinois and Minnesota<br>
     IL LCSW 149.024246 · IL CADC 36462 · MN LICSW 32822</p>
+    <a class="badge" href="https://www.ncpgambling.org/" rel="noopener"><img src="ncpg-2026-individual-member.png" alt="National Council on Problem Gambling — 2026 Individual Member" width="640" height="302" loading="lazy" decoding="async"></a>
     <p>This site is personal. For clinical services, scheduling, and fees, see <a href="https://chicagoaddictiontherapy.com">chicagoaddictiontherapy.com</a>. Nothing here is therapy or medical advice.</p>
   </footer>
 
